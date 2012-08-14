@@ -44,7 +44,6 @@ common_C_INCLUDES = $(LOCAL_PATH)/include
 include $(CLEAR_VARS)
 
 ifeq ($(TARGET_ARCH),arm)
-    LOCAL_NDK_VERSION := 5
     LOCAL_SDK_VERSION := 9
 endif
 
