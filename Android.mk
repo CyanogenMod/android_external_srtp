@@ -33,7 +33,8 @@ common_CFLAGS := \
     -Werror \
     -Wno-ignored-qualifiers \
     -Wno-sign-compare \
-    -Wno-missing-field-initializers
+    -Wno-missing-field-initializers \
+    -Wno-unused-parameter
 
 common_C_INCLUDES = $(LOCAL_PATH)/include
 
