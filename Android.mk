@@ -36,6 +36,10 @@ common_CFLAGS := \
     -Wno-missing-field-initializers \
     -Wno-unused-parameter
 
+ifneq ($(LOCAL_CLANG),true)
+    common_CFLAGS += -Wno-unused-but-set-variable
+endif
+
 common_C_INCLUDES = $(LOCAL_PATH)/include
 
 # For the device
